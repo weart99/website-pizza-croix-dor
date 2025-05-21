@@ -1,0 +1,75 @@
+/* Ajout d'un style responsive pour les filtres */
+@media (max-width: 640px) {
+    .filtre-btn {
+        font-size: 0.875rem;
+        /* Réduire la taille de police sur mobile */
+        padding: 0.5rem 1rem;
+        /* Réduire l'espace autour des boutons */
+        width: auto;
+        /* Ne pas prendre toute la largeur */
+        margin: 0.25rem;
+        /* Ajouter un petit espace entre les boutons */
+    }
+
+    /* Organiser les filtres en une seule colonne */
+    .filtre-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Ajuster la taille des cartes de pizza sur mobile */
+@media (max-width: 640px) {
+    .pizza-card {
+        height: auto;
+        /* Laisser la hauteur des cartes s'adapter */
+        margin: 0.5rem 0;
+        /* Ajouter un peu d'espace vertical */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .pizza-card img {
+        width: 100%;
+        /* S'assurer que l'image prend la largeur de la carte */
+        max-height: 180px;
+        /* Limiter la hauteur des images */
+        object-fit: cover;
+        /* Garder les proportions de l'image */
+    }
+
+    .pizza-card .details {
+        padding: 1rem;
+    }
+}
+
+/* Ajuster la taille du texte sur mobile */
+@media (max-width: 640px) {
+    .pizza-card .details p {
+        font-size: 0.9rem;
+        /* Réduire légèrement la taille de la police */
+        line-height: 1.4;
+        /* Aérer les lignes de texte */
+    }
+
+    .pizza-card .details h3 {
+        font-size: 1.2rem;
+        /* Taille plus petite pour les titres */
+    }
+}
+
+@media (max-width: 640px) {
+    .section {
+        padding: 1rem;
+        /* Réduire les espacements dans les sections */
+    }
+
+    .filtre-btn {
+        font-size: 0.875rem;
+        /* Taille plus petite pour les boutons */
+        padding: 0.5rem 1rem;
+        /* Réduire le padding */
+    }
+}
