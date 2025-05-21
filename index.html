@@ -4,9 +4,50 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
     <title>Pizza Croix d'Or</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description"
+        content="Pizza artisanale à Pierrelatte. Pâte maison, cuisson au feu de bois. Commande par téléphone ou sur place. Ouvert tous les soirs sauf lundi et mercredi." />
+    <meta name="keywords"
+        content="pizza Pierrelatte, artisan pizzaiolo, pizzas maison, livraison pizza, Pizza la Croix d'Or" />
+    <meta name="author" content="@weart99" />
+    <link rel="canonical" href="https://pizzacroixdor.netlify.app/" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DONNÉES STRUCURÉES GOOGLE -->
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Pizza la Croix d'Or",
+        "description": "Pizza la Croix d'Or - Artisan Pizzaiolo à Pierrelatte. Fabrication maison",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Centre Commercial Carrefour Market",
+            "addressLocality": "PIERRELATTE",
+            "postalCode": "26700",
+            "addressCountry": "FR"
+        },
+        "telephone": "+33 4 75 96 84 36",
+        "url": "https://pizzacroixdor.netlify.app",
+        "hasMenu": "https://pizzacroixdor.netlify.app/menu.html",
+        "openingHoursSpecification": [
+            {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Tuesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ],
+            "opens": "17:30",
+            "closes": "21:00"
+            }
+        ]
+        }
+    </script>
 </head>
 
 <body class="bg-[#f3e0b3] text-gray-800 dark:bg-[#1e2a47] dark:text-white scroll-smooth">
@@ -14,7 +55,7 @@
     <!-- En-tête -->
     <header class="bg-red-600 text-white text-center dark:bg-red-700">
         <div class="flex items-center justify-center space-x-4">
-            <img src="images/logo.png" alt="Logo Pizza" class="h-32 w-32 object-scale-down" />
+            <img src="images/logo.webp" alt="Logo Pizza" class="h-32 w-32 object-scale-down" />
             <h1 class="text-5xl font-bold">Pizza la Croix d'Or</h1>
         </div>
     </header>
